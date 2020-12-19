@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 	<button id="toggler"
-			class="navbar-toggler ml-auto"
+			class="navbar-toggler"
 			type="button"
 			data-toggle="collapse"
 			data-target="#main-menu"
@@ -14,10 +14,10 @@
 	</button>
 	<div id="main-menu"
 		 class="collapse navbar-collapse">
-		<ul class="navbar-nav ml-auto">
+		<ul class="navbar-nav">
 			<% for (let link of metadata.links) { %>
 				<li class="nav-item px-1">
-					<a class="nav-link text-right text-white"
+					<a class="nav-link text-white"
 					   href="<%= link.href %>"><%= link.name %></a>
 				</li>
 			<% } %>
