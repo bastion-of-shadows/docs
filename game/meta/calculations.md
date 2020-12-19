@@ -39,7 +39,7 @@ Skill Modifiers represent how talented a character is in a particular skill. The
 
 ### Determining Character Force Level
 
-The Character's Force Level is used for several figures in the game. All characters are created with Force Level 0, and if they are Force sensitive then their first level-up will grant them a Force Level of between `1-4`. Which Force Level is granted is based on a D20 roll. At <=8, the character is granted Force Level 1; at <=14, Force Level 2; at <= 18, Force Level 3; otherwise, the character is granted Force Level 4.
+The Character's Force Level is used for several figures in the game. All characters are created with Force Level 0, and if they are Force sensitive then their first level-up will grant them a Force Level of between `1-4`. Which Force Level is granted is based on a D20 roll. At `<=7`, the character is granted Force Level 1; at `<=14`, Force Level 2; at `<=18`, Force Level 3; otherwise, the character is granted Force Level 4.
 
 **REMINDER**: Premium accounts reserve the right to select their Force Level, and so their roll would be bypassed.
 
