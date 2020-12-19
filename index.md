@@ -9,7 +9,7 @@ Bastion of Shadows is a free-to-play, open source game inspired by Star Wars and
 
 ## Help wanted
 
-Bastion of Shadows is currently looking for designers, developers, and storytellers! A game like this isn't going to build itself, and it's too much for one person to reasonably handle alone.
+Bastion of Shadows is currently looking for designers, developers, and storytellers! A game like this isn't going to build itself, and it's a lot for one person to handle alone.
 
 This is an open source game with no pay model and no ads, so our developers work on a volunteer basis. Maybe you want another portfolio piece. Maybe you're a new developer and you want some team experience. Whatever the case, we'd love to hear from you by sending us an email at [bastionofshadows@gmail.com](mailto:bastionofshadows@gmail.com) and telling us what you'd like to contribute.
 
