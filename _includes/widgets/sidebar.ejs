@@ -1,0 +1,29 @@
+<aside class="col-12 col-lg-3 offset-lg-2 mt-5 mt-lg-0">
+	<% if (category !== "none") { %>
+    	<h2 class="mt-5 mb-3"><%- category[0].toUpperCase() + category.substr(1) %></h2>
+		<ul class="nav flex-column mb-5">
+			<% for (post of collections[category]) { %>
+				<li class="mb-1">
+					<% if (page.url === post.url) { %>
+						<%- post.data.pageTitle %>
+					<% } else { %>
+						<a href="<%- post.url %>"><%- post.data.pageTitle %></a>
+					<% } %>
+				</li>
+			<% } %>
+		</ul>
+	<% } %>
+
+	<h2 class="<% if (category === "none") { %> mt-5 <% } %>mb-3">Topics</h2>
+	<ul class="nav flex-column mb-5">
+		<% for (post of collections["topics"]) { %>
+			<li class="mb-1">
+				<% if (page.url === post.url) { %>
+					<%- post.data.pageTitle %>
+				<% } else { %>
+					<a href="<%- post.url %>"><%- post.data.pageTitle %></a>
+				<% } %>
+			</li>
+		<% } %>
+	</ul>
+</aside>

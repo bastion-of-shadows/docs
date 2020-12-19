@@ -1,0 +1,42 @@
+{
+	"name": "bastionofshadows.com",
+	"version": "1.0.0",
+	"description": "BoS docs",
+	"main": "index.js",
+	"scripts": {
+		"clean": "if [ -d \"build\" ]; then rm -r build; fi",
+		"build": "npm run clean && npx webpack && npx @11ty/eleventy --output=build --formats=md,ejs",
+		"serve": "npm run clean && npx webpack && npx @11ty/eleventy --serve --output=build --formats=md,ejs"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bastion-of-shadows/bastion-of-shadows"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.11.0",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+		"@babel/core": "^7.6.0",
+		"@babel/preset-env": "^7.6.0",
+		"autoprefixer": "^9.8.6",
+		"babel-loader": "^8.0.6",
+		"bootstrap": "^4.5.3",
+		"copy-webpack-plugin": "^6.3.2",
+		"css-loader": "^5.0.0",
+		"file-loader": "^4.2.0",
+		"html-webpack-plugin": "^4.5.0",
+		"jquery": "^3.5.1",
+		"markdown-it": "^12.0.2",
+		"mini-css-extract-plugin": "^1.2.1",
+		"popper.js": "^1.16.1",
+		"postcss": "^8.1.9",
+		"postcss-loader": "^4.0.4",
+		"sass": "^1.28.0",
+		"sass-loader": "^10.0.5",
+		"style-loader": "^2.0.0",
+		"webpack": "^4.40.2",
+		"webpack-cli": "^3.3.9"
+	}
+}

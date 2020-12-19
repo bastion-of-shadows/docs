@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"
+	  class="w-100 mw-100 min-vh-100">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible"
+		  content="IE=edge"/>
+	<meta name="viewport"
+		  content="width=device-width,initial-scale=1.0"/>
+	<meta name="description"
+		  content="<%- blurb %>"/>
+
+	<%
+	const seoData = {
+		pageTitle,
+		blurb,
+		url: page.url,
+		siteName: metadata.title
+	}
+	%>
+	<%- include('seo/og', seoData) %>
+	<%- include('seo/twitter', seoData) %>
+	<%- include('seo/facebook', {facebookAppId: metadata.facebookAppId}) %>
+
+	<link rel="preconnect"
+		  href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+		  rel="stylesheet">
+	<link rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		  crossorigin="anonymous"/>
+	<%- include('webpack') %>
+	<title><%= pageTitle %> | <%= metadata.title %></title>
+</head>
+<body class="d-flex flex-column w-100 mw-100 min-vh-100">
+
+<%- include('widgets/main-menu') %>
+
+<div class="w-90 container-fluid mx-auto d-flex flex-column flex-grow-1 my-5">
+	<div class="row">
+		<%- include('widgets/main-content') %>
+		<%- include('widgets/sidebar') %>
+	</div>
+</div>
+
+<%- include('widgets/footer') %>
+
+</body>
+</html>

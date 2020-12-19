@@ -1,0 +1,27 @@
+<main class="col-12 col-lg-7">
+	<div class="row">
+		<% if (page.url !== "/") { %>
+			<h1 class="mt-4 col-12"><%- pageTitle %></h1>
+		<% } %>
+		<%- content %>
+		<% if (authors) { %>
+			<hr class="w-100"/>
+			<div class="col-12">
+				<p class="small font-italic"> Contributors:</p>
+				<ul class="list-unstyled">
+					<% authors.forEach(author => { %>
+						<li>
+							<a href="<%- author.url %>"
+							   target="_blank">
+								<img class="contributor-image rounded-circle mr-1"
+									 src="<%- author.image %>"
+									 alt="<%- author.name %>"
+									 title="<%- author.name %>"/>
+							</a>
+						</li>
+					<% }) %>
+				</ul>
+			</div>
+		<% } %>
+	</div>
+</main>

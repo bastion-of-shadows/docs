@@ -1,0 +1,23 @@
+@import "bootstrap-overrides";
+@import "~bootstrap/scss/_mixins.scss";
+
+html, body {
+	overflow-x: hidden;
+}
+pre {
+	background: $gray-800;
+	padding: 15px;
+}
+pre[class*="language-"] {
+	margin: ($spacer * 2.5) 15px;
+	width: 100%;
+}
+
+.text-decoration-underline {
+	text-decoration: underline;
+}
+
+.contributor-image {
+	width: 40px;
+	height: 40px;
+}

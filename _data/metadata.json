@@ -1,0 +1,14 @@
+{
+	"title": "Bastion of Shadows",
+	"links": [
+		{
+			"name": "Home",
+			"href": "/"
+		},
+		{
+			"name": "Game guide",
+			"href": "/game"
+		}
+	],
+	"facebookAppId": "708387383149354"
+}
