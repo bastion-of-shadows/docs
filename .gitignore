@@ -4,6 +4,8 @@
 
 node_modules
 
+copydocs.sh
+deploy.sh
 build
 *.tar
 
