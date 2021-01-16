@@ -8,6 +8,8 @@ md.renderer.rules.image            = require("./image")
 md.renderer.rules.link_open        = require("./linkOpen")
 md.renderer.rules.paragraph_open   = require("./paragraphOpen")
 md.renderer.rules.code_inline      = require("./codeInline")
+md.renderer.rules.table_open       = require("./tableOpen")
+md.renderer.rules.table_close      = require("./tableClose")
 
 // Lists
 md.renderer.rules.list_item_open     = require("./listItem")
